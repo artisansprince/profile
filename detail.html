@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000">
+    <title>Caessar - Project Detail</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/webimage/icon.png" type="image/x-icon">
+</head>
+<body class="bg-white text-black">
+
+    <!-- Header -->
+    <header class="sticky top-0 p-2 py-4 bg-white" style="z-index: 100;">
+        <nav class="flex justify-between max-w-[75%] mx-auto">
+            <a href="index.html"><h1>artisansprince</h1></a>
+            <div class="flex gap-2">
+                <a href="#"><strong>#</strong>All Projects</a>
+                <a href="#"><strong>#</strong>Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Project Detail Layout -->
+    <hr class="m-2 mt-8 max-w-[75%] mx-auto">
+    <div class="max-w-5xl mx-auto mt-8 p-4 grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <!-- Left Column: Title and Description -->
+        <div class="col-span-2">
+            <h2 id="project-title" class="text-2xl font-bold mb-4"></h2>
+            <p id="project-description" class="mb-4 border-2 border-zinc-700 p-3 rounded"></p>
+            <div id="project-details" class="grid grid-cols-2 gap-4">
+                <!-- Images will be inserted here -->
+            </div>
+        </div>
+
+        <!-- Right Column: Thumbnail, Price, and Download -->
+        <div>
+            <div class="sticky" style="top: 100px;">
+                <div class="border-2 border-zinc-800 p-6 rounded-lg">
+                    <h2 class="text-lg font-semibold mb-4">Get Source Code</h2>
+                    <img id="project-thumbnail" class="w-full mb-4 rounded">
+                    
+                    <!-- Price Container -->
+                    <div id="price-container" class="flex flex-col space-y-2 mb-4">
+                        <!-- Original Price -->
+                        <div class="flex items-center space-x-2">
+                            <span id="original-price" class="text-sm line-through text-gray-400"></span>
+                            <span id="discount" class="text-sm text-green-400"></span>
+                        </div>
+                        <!-- Discounted Price -->
+                        <span id="discount-price" class="text-xl font-semibold text-black"></span>
+                    </div>
+                    
+                    <a id="download-link" href="#" download class="py-2 px-4 bg-green-400 text-black rounded block text-center">Download Project</a>
+                </div>
+
+                <!-- New Section: Related Projects -->
+                <div id="related-projects" class="mt-8">
+                    <h2 class="text-xl font-bold mb-4">Oter Projects</h2>
+                    <div id="related-projects-list" class="space-y-4">
+                        <!-- Related projects will be inserted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-gray-100 text-black py-4 text-center">
+        <p>&copy; 2024 Artisans Prince. All rights reserved.</p>
+    </footer>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
